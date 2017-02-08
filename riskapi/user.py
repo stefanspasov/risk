@@ -1,8 +1,8 @@
-class user:
+class User:
 
     def __init__(self, name):
         self.name = name
-        self.loginDates = {}
+        self.login_atempts = []
 
-    def addLoginDate(self, date, isSuccess):
-        self.loginDates[date] = isSuccess
+    def add_login_date(self, date, is_success):
+        self.login_atempts.append((date, is_success))

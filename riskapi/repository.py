@@ -1,18 +1,16 @@
-class repository ():
+class Repository ():
 
     def __init__ (self):
         self.users = []
         self.ips = set()
 
-    def addUser (self, user):
+    def add_user (self, user):
         self.users.append(user)
 
-    def addIp(self, ip):
+    def add_ip(self, ip):
         self.ips.add(ip)
 
-    def getUser(self, username):
+    def get_user(self, username):
         for user in self.users:
             if user.name == username:
                 return user
-        else:
-            return None
